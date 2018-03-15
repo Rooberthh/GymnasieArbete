@@ -1,0 +1,589 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #fff;
+}
+
+/* LOADER ANIMATIONS
+-------------------------------------------------- */
+
+.cssload-loader {
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 112px);
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  perspective: 2800px;
+}
+
+.cssload-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;  
+}
+
+.cssload-inner.cssload-one {
+  left: 0%;
+  top: 0%;
+  animation: cssload-rotate-one 1.15s linear infinite;
+    -o-animation: cssload-rotate-one 1.15s linear infinite;
+    -ms-animation: cssload-rotate-one 1.15s linear infinite;
+    -webkit-animation: cssload-rotate-one 1.15s linear infinite;
+    -moz-animation: cssload-rotate-one 1.15s linear infinite;
+  border-bottom: 11px solid rgb(231, 76, 60);
+}
+
+.cssload-inner.cssload-two {
+  right: 0%;
+  top: 0%;
+  animation: cssload-rotate-two 1.15s linear infinite;
+    -o-animation: cssload-rotate-two 1.15s linear infinite;
+    -ms-animation: cssload-rotate-two 1.15s linear infinite;
+    -webkit-animation: cssload-rotate-two 1.15s linear infinite;
+    -moz-animation: cssload-rotate-two 1.15s linear infinite;
+  border-right: 11px solid rgb(231, 76, 60);
+}
+
+.cssload-inner.cssload-three {
+  right: 0%;
+  bottom: 0%;
+  animation: cssload-rotate-three 1.15s linear infinite;
+    -o-animation: cssload-rotate-three 1.15s linear infinite;
+    -ms-animation: cssload-rotate-three 1.15s linear infinite;
+    -webkit-animation: cssload-rotate-three 1.15s linear infinite;
+    -moz-animation: cssload-rotate-three 1.15s linear infinite;
+  border-top: 11px solid rgb(231, 76, 60);
+}
+
+
+
+@keyframes cssload-rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+     -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+     -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+       -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+     -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+     -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+     -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+     -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+} 
+
+@keyframes cssload-rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+     -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+     -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+       -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+
+@keyframes cssload-rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+     -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+     -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+       -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+       -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+        -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+
+/* FADE IN CONTENT ANIMATION
+-------------------------------------------------- */
+
+.fade-in{
+   -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Classes to Hide/Display Content
+-------------------------------------------------- */
+
+.loaded .cssload-loader{
+  visibility: hidden;
+  display: none;
+}
+
+.remove-content{
+  display: none;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: fixed;
+  width: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#navbar{
+	float:right;
+	margin-right: 10px;
+}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.btn-carousel{
+  background-color: #f44e42;
+  color: #fff;
+  box-shadow: 0 0 10px #555;
+  transition: all .2s ease-in-out;
+  text-align: center;
+}
+
+.btn-carousel:hover{
+  text-decoration: none;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 5px rgba(222,222,222,0.7);
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-image{
+ border-radius: 1.5em;
+ box-shadow: 7px 7px 3px #888888;
+ 
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.featurette-title-divider{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-color: #FC3838;
+	width: 71px;
+	margin-top: 11px;
+	margin-left: auto;
+	margin-right: auto;
+		
+}
+
+.lead-header{
+	list-style-type: none;
+	float: center;
+}
+
+.img-circle{
+  box-shadow: 3px 3px 1px #888888;
+}
+
+/* FOOTER
+------------------------- */
+
+.footer{
+  position: absolute;
+  clear: both;
+}
+
+.social li {
+	display: inline-block;	
+}
+
+/* Boosters
+-------------------------------------------------- */
+
+.boosting-title{
+	padding: 50px 0px 60px; 
+	background-position: bottom;
+}
+
+.title-heading{
+	text-align: center;	
+	color: #f2f2f2;
+	text-transform: uppercase;
+	display: block;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.caption{
+	display:block;
+	text-align:center;
+	padding-top: 1em;
+	font-size: 18px;
+	font-style: italic;
+	color: #979797;
+	line-height: 20px;
+}
+
+/* Profiles
+------------------------------ */
+
+.booster-profiles{
+  margin-top: 3em;
+  padding-top: 2em;
+  background-color: #fafafa;
+  border-radius: 0.5em;
+}
+
+.booster-positions{
+	text-align: left;
+	font-weight: bold;
+	color: red;
+}
+
+.booster-roles{
+	font-weight:bold;
+	text-align: left;
+  text-transform: Uppercase;
+}
+
+.btn2{
+	padding: 12px 19px;
+	margin-bottom: 30px;
+  background-color: #f44e42;
+  color: #fff;
+  box-shadow: 0 0 10px #555;
+  transition: all .2s ease-in-out;
+
+}
+
+.btn2:hover{
+	text-decoration: none;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* FAQ
+------------------------------ */
+.faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+.pricing-title{
+	font-size: 20px;
+	font-weight: bold; 
+	font-style: italic;
+}
+
+select.normal{
+	background-color: #fff;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.center{
+	text-align:center;
+	align-content: center;
+}
+
+.panel-heading [data-toggle="collapse"] > .icon{ 
+  float: right;
+
+  /** Roterar play knappen så det blir en pil nedåt **/
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed > .icon{
+  float: right;
+
+  /** Roterar play knappen så det blir en pil uppåt **/
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+ 
+
+/* SIGN UP
+------------------------------ */
+
+body#body1{
+	background-color: #111;
+}
+
+.panel-title{
+	text-align:center;
+	font-size: 2em;
+	margin-bottom:10px;
+	color: #999;
+  margin-top: 10px;
+}
+
+.form-control{
+	background-color:#222;
+}
+.centered{
+	margin-top: 70px;
+}
+
+.centered-form .panel{
+	background: inherit;
+	border:none;
+}
+
+
+
+
+
+/* Contact
+------------------------------ */
+#subject{
+	color:#999;
+}	
+.disabled_option{
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* DASHBOARD
+------------------------------ */
+.dashboard-nav{
+  background-color: #222;
+}
+
+.dashboard-nav ul li a{
+  color: #888;
+}
+
+.form-title{
+  color:  white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.dashboard-divider{
+  border: 0;
+  margin-top: 80px;
+}
+
+.paypal-button{
+  border-radius: 5px;
+  background-color: #f44e42;
+  border: none;
+  padding: 7px;
+  margin-top: 8px;
+  color: #eee;
+}
+/* Booster Profiles
+-------------------------------------------------- */
+
+
+body#body2{
+  background-color: #f2f2f2;
+}
+
+#profile-picture{
+  margin-top: 30px;
+}
+
+.profile_header{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.booster-wins{
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.booster-defeat{
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.booster-winrate{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
